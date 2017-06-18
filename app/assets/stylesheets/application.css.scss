@@ -19,10 +19,16 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-.navbar {
-  margin-bottom: 20px;
+
+body {
+    background-image: url(http://i.imgur.com/ZNKxhxu.jpg), url(http://i.imgur.com/HoKhG5X.jpg), url(http://i.imgur.com/M1uWa30.jpg);
+    background-repeat: repeat-x, repeat-x, repeat;
+    background-attachment: fixed;
 }
 
+.navbar-default{
+  background-color: #d9d9d9;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -32,9 +38,11 @@
   height: 500px;
   margin-bottom: 60px;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  position: relative;
 }
 
 /* Declare heights because of positioning of img element */
@@ -57,6 +65,7 @@
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
+  margin-right: -30px;
   text-align: center;
 }
 .marketing h2 {
@@ -96,5 +105,64 @@
     font-size: 21px;
     line-height: 1.4;
   }
-
+  
 }
+
+
+
+/* Style all font awesome icons */
+
+#social-media{
+  margin-bottom: 30px;
+}
+
+#social-media p{
+  font-size: small;
+}
+
+.fa {
+    padding: 30px;
+    font-size: 50px;
+    width: 270px;
+    height: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.9;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* YouTube */
+.fa-youtube {
+    background: #e52d27;
+    color: white;
+}
+
+/* Twitch */
+.fa-twitch {
+    background: #6441a5;
+    color: white;
+}
+
+#social-media h1{
+  text-align: center;
+}
+
+#social-media h3{
+  text-align: center;
+  padding-bottom: 30px;
+} 
