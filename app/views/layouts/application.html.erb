@@ -10,59 +10,64 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     
   </head>
+  
+  <header>
+     <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <%= link_to "/", class: "navbar-brand" do %>
+            EvenMatchupGaming
+          <% end %>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Events", events_path %></li>
+            <li><%= link_to "Players", staff_path %></li>
+             <li><%= link_to "Videos", videos_path %></li>
+            <li><%= link_to "Let's talk", new_contact_path %></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+  
 
-  <div class = "container">
-    <body>
-       <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <%= link_to "/", class: "navbar-brand" do %>
-              EvenMatchupGaming
-            <% end %>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><%= link_to "About", about_path %></li>
-              <li><%= link_to "Let's talk", new_contact_path %></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Static top</a></li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
+ <body>
       
-      
-      <%= yield %>
-    </body>
+     <%= yield %>
+    
+ </body>
     
     <!-- FOOTER -->
-    <footer>
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017 EvenMatchupGaming, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+ <footer>
+      <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <%= link_to "/", class: "navbar-brand" do %>
+            EvenMatchupGaming
+          <% end %>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Let's talk", new_contact_path %></li>
+            <li><%= link_to "Events", events_path %></li>
+            <li><%= link_to "Players", events_path %></li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+      
+ </footer>
     
     
-  </div>
+ 
   
 </html>

@@ -19,6 +19,27 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-page{
+  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(http://i.imgur.com/wkJv0mQ.jpg);
+  height:100vh;
+  background-position: center;
+  background-size:cover;
+  margin-bottom: 50px;
+  color:white;
+}
+
+
+.jumbotron{
+  position: relative;
+  top: 150px;
+  opacity: 0.8;
+  background-color:rgba(41, 58, 72, 0);
+  text-align: center;
+}
 
 body {
     background-image: url(http://i.imgur.com/ZNKxhxu.jpg), url(http://i.imgur.com/HoKhG5X.jpg), url(http://i.imgur.com/M1uWa30.jpg);
@@ -26,8 +47,17 @@ body {
     background-attachment: fixed;
 }
 
+nav.navbar.navbar-default {
+  margin-bottom: 0px;
+}
+
 .navbar-default{
-  background-color: #d9d9d9;
+  background-color: #414345;
+  border: #414345;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -114,13 +144,14 @@ body {
 
 #social-media{
   margin-bottom: 30px;
+  right: 30px;
 }
 
 #social-media p{
   font-size: small;
 }
 
-.fa {
+#social-media .fa {
     padding: 30px;
     font-size: 50px;
     width: 270px;
@@ -166,3 +197,55 @@ body {
   text-align: center;
   padding-bottom: 30px;
 } 
+
+
+/* Team members */
+
+.team-member{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color:#020a17;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.team-member img{
+  flex-shrink: 0;
+  max-width: 500px;
+}
+
+.team-profile-photo{
+  position: static;
+  display: block;
+  float: right;
+  max-width: 500px;
+  bottom: 40px;
+}
+
+.player-description{
+  position:relative;
+  color:white;
+  text-align: center;
+}
+
+.player-description p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.player-tag{
+  font-style: normal;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+#player-social-media .fa {
+    position:relative;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left:10px;
+    text-align:center;
+}
