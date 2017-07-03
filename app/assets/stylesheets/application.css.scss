@@ -42,7 +42,7 @@ h1, h2 {
 }
 
 body {
-    background-image: url(http://i.imgur.com/xJ5UTtd.jpg), url(http://i.imgur.com/HoKhG5X.jpg), url(http://i.imgur.com/M1uWa30.jpg);
+    background-image: url(http://i.imgur.com/o33C6oe.jpg), url(http://i.imgur.com/HoKhG5X.jpg), url(http://i.imgur.com/M1uWa30.jpg);
     background-repeat: repeat-x, repeat-x, repeat;
     background-attachment: fixed;
 }
@@ -266,3 +266,11 @@ nav.navbar.navbar-default {
     text-align:center;
 }
 
+
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
