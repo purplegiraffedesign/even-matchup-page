@@ -12,28 +12,30 @@
   </head>
   
   <header>
-     <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          
-          <%= link_to "/", class: "navbar-brand" do %>
-            EvenMatchupGaming
-          <% end %>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+    <section id = "custom-navbar">
+       <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
             
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "About", about_path %></li>
-            <li><%= link_to "Events", events_path %></li>
-            <li><%= link_to "Players", staff_path %></li>
-             <li><%= link_to "Videos", videos_path %></li>
-            <li><%= link_to "Let's talk", new_contact_path %></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+            <%= link_to "/", class: "navbar-brand" do %>
+              EvenMatchupGaming
+            <% end %>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "About", about_path %></li>
+              <li><%= link_to "Events", events_path %></li>
+              <li><%= link_to "Players", staff_path %></li>
+               <li><%= link_to "Videos", videos_path %></li>
+              <li><%= link_to "Let's talk", new_contact_path %></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </section>
   </header>
   
 
@@ -45,8 +47,9 @@
     
     <!-- FOOTER -->
  <footer>
+    <section id = "custom-navbar">
       <nav class="navbar navbar-default">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           
           <%= link_to "/", class: "navbar-brand" do %>
@@ -61,10 +64,14 @@
             <li><%= link_to "Players", events_path %></li>
           </ul>
           
+          <a href="https://www.facebook.com/elchelevi" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/n0ned" class="fa fa-twitter"></a>
+          <a href="https://twitch.tv/n0ne13" class="fa fa-twitch"></a>
+          
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-      
+  </section>  
  </footer>
     
     

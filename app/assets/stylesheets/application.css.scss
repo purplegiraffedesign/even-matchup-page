@@ -24,7 +24,7 @@ h1, h2 {
 }
 
 .title-page{
-  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(http://i.imgur.com/wkJv0mQ.jpg);
+  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(http://i.imgur.com/zhM35xM.jpg);
   height:100vh;
   background-position: center;
   background-size:cover;
@@ -42,7 +42,7 @@ h1, h2 {
 }
 
 body {
-    background-image: url(http://i.imgur.com/ZNKxhxu.jpg), url(http://i.imgur.com/HoKhG5X.jpg), url(http://i.imgur.com/M1uWa30.jpg);
+    background-image: url(http://i.imgur.com/xJ5UTtd.jpg), url(http://i.imgur.com/HoKhG5X.jpg), url(http://i.imgur.com/M1uWa30.jpg);
     background-repeat: repeat-x, repeat-x, repeat;
     background-attachment: fixed;
 }
@@ -58,6 +58,11 @@ nav.navbar.navbar-default {
 
 .navbar-default .navbar-brand {
     color: white;
+    text: 24px;
+}
+
+#custom-navbar .navbar-default{
+  min-height:60px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -160,6 +165,17 @@ nav.navbar.navbar-default {
     text-decoration: none;
 }
 
+#custom-navbar .fa {
+    position:relative;
+    font-size: 40px;
+    height:40px;
+    width:40px;
+    float:right;
+    margin-left:10px;
+    margin-top:10px;
+    text-align:center;
+}
+
 /* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.9;
@@ -206,7 +222,7 @@ nav.navbar.navbar-default {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color:#020a17;
+  background-color:#414345;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -249,3 +265,4 @@ nav.navbar.navbar-default {
     margin-left:10px;
     text-align:center;
 }
+
